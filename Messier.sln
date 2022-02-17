@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messier.CQRS.Commands", "Messier.CQRS.Commands", "{5A805AA4-8763-45FA-AFE5-49D979407C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier.CQRS.Commands", "Messier.CQRS.Commands\src\Messier.CQRS.Commands.csproj", "{7D0A20C2-D109-47FD-AA62-A43553C4A1C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messier", "Messier", "{DE10D25B-3E32-4CB0-A668-5FD0AF68B4E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier", "Messier\src\Messier.csproj", "{D0A061B8-9110-4863-A092-F3C4764520E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0A061B8-9110-4863-A092-F3C4764520E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A061B8-9110-4863-A092-F3C4764520E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A061B8-9110-4863-A092-F3C4764520E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A061B8-9110-4863-A092-F3C4764520E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1} = {5A805AA4-8763-45FA-AFE5-49D979407C2C}
+		{D0A061B8-9110-4863-A092-F3C4764520E9} = {DE10D25B-3E32-4CB0-A668-5FD0AF68B4E9}
+	EndGlobalSection
+EndGlobal
