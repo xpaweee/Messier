@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messier", "Messier", "{DE10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier", "Messier\src\Messier.csproj", "{D0A061B8-9110-4863-A092-F3C4764520E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messier.CQRS.Events", "Messier.CQRS.Events", "{04637798-8F8E-4E87-97E2-1B05F5E20BB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier.CQRS.Events", "Messier.CQRS.Events\src\Messier.CQRS.Events.csproj", "{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,14 @@ Global
 		{D0A061B8-9110-4863-A092-F3C4764520E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A061B8-9110-4863-A092-F3C4764520E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A061B8-9110-4863-A092-F3C4764520E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7D0A20C2-D109-47FD-AA62-A43553C4A1C1} = {5A805AA4-8763-45FA-AFE5-49D979407C2C}
 		{D0A061B8-9110-4863-A092-F3C4764520E9} = {DE10D25B-3E32-4CB0-A668-5FD0AF68B4E9}
+		{F5D9F5A2-111B-4429-8484-BA1C6C65DF6E} = {04637798-8F8E-4E87-97E2-1B05F5E20BB6}
 	EndGlobalSection
 EndGlobal
