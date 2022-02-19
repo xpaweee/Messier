@@ -21,7 +21,7 @@ public static class Extensions
 
     public static IMessierBuilder AddEventHandlers(this IMessierBuilder builder)
     {
-        builder.ServiceCollection.AddScoped<IEventDispatcher, EventDispatcher.EventDispatcher>();
+        builder.ServiceCollection.AddSingleton<IEventDispatcher, EventDispatcher.EventDispatcher>();
         return builder;
     }
 }

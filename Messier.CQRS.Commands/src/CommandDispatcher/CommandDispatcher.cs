@@ -15,6 +15,6 @@ internal sealed class CommandDispatcher : ICommandDispatcher
     async Task ICommandDispatcher.DispatchAsync<TCommand>(TCommand command) where TCommand : class
     {
         var handler = _serviceProvider.GetRequiredService<ICommandHandler<TCommand>>();
-        await handler.HandleAsync(command);
+        await handler.HandleCommandAsync(command);
     }
 }
