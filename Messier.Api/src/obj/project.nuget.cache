@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "egH6/BuUSONxmdZ0HX9uysoR0f/8WB79JW6WrI6gSeiqmxq1Nc5b4tshLHwFwngBxN2rQxljAmHRUz6L8eNNBw==",
+  "success": true,
+  "projectFilePath": "/Users/xpaweee/Desktop/Messier/Messier.Api/src/Messier.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/xpaweee/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/microsoft.extensions.dependencymodel/6.0.0/microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/scrutor/4.0.0/scrutor.4.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

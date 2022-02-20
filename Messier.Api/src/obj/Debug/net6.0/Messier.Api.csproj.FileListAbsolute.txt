@@ -1,0 +1,12 @@
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.Api.deps.json
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.csproj.AssemblyReference.cache
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.AssemblyInfoInputs.cache
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.AssemblyInfo.cs
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.csproj.CoreCompileInputs.cache
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/refint/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/ref/Messier.Api.dll
