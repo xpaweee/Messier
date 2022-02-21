@@ -2,7 +2,7 @@ namespace Messier.Api.Interfaces;
 
 public interface IEndpointBuilder
 {
-    public IEndpointBuilder AddGet(string path);
-    public IEndpointBuilder AddPost(string path);
+    IEndpointBuilder AddGet<TResult, TQuery>(string path);
+    IEndpointBuilder AddPost<TQuery>(string path);
 
 }

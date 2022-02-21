@@ -6,12 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Messier.CQRS.Commands/1.0.0": {
+      "Messier.CQRS.Queries/1.0.0": {
         "dependencies": {
-          "Messier": "1.0.0"
+          "Messier": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
         },
         "runtime": {
-          "Messier.CQRS.Commands.dll": {}
+          "Messier.CQRS.Queries.dll": {}
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -111,7 +112,7 @@
     }
   },
   "libraries": {
-    "Messier.CQRS.Commands/1.0.0": {
+    "Messier.CQRS.Queries/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
