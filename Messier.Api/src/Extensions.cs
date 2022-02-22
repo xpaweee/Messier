@@ -1,19 +1,25 @@
+using Messier.Api.Builder;
+using Messier.Api.Interfaces;
+using Messier.Api.Models;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Messier.Api;
 
 public static class Extensions
 {
-    public static IApplicationBuilder UseWebApiEndpoints(this IApplicationBuilder app, bool useAuhtorization = true)
+    public static IApplicationBuilder UseWebApiEndpointDispatchers(this IApplicationBuilder app, Action<IEndpointBuilder> builder,bool useAuhtorization = true)
     {
         app.UseRouting();  
         
         //TODO: Add use authorization
         // if(useAuhtorization)
+
+        var webApiDefinitionList = app.ApplicationServices.GetRequiredService<WebApiDefinitionList>();
         
-        app.UseEndpoints(endpoints =>
+        app.UseEndpoints(endpointRouteBuilder =>
         {
-           
+            builder(new EndpointsBuilder(endpointRouteBuilder, webApiDefinitionList));
         });
 
         return app;

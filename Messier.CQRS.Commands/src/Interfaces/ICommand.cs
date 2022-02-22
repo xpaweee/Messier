@@ -1,7 +1,7 @@
 namespace Messier.CQRS.Commands.Interfaces;
 
 //Marker
-internal interface ICommand
+public interface ICommand
 {
 }
     

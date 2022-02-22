@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Messier.CQRS.Commands\src\Messier.CQRS.Commands.csproj" />
     <ProjectReference Include="..\..\Messier.CQRS.Queries\src\Messier.CQRS.Queries.csproj" />
   </ItemGroup>
 

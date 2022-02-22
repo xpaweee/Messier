@@ -12,7 +12,7 @@ internal sealed class QueryDispatcher : IQueryDispatcher
         _serviceProvider = serviceProvider;
     }
 
-    public async Task<TResult> DispatchAsync<TResult, TQuery>(TQuery query) where TResult : class where TQuery : class, IQuery
+    public async Task<TResult> DispatchAsync<TQuery, TResult>(TQuery query) where TResult : class where TQuery : class, IQuery
     {
         using var scope = _serviceProvider.CreateScope();
         var handler = scope.ServiceProvider.GetRequiredService<IQueryHandler<TQuery,TResult>>();

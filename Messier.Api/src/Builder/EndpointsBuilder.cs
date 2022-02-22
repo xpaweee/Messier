@@ -4,34 +4,32 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace Messier.Api;
+namespace Messier.Api.Builder;
 
 internal sealed class EndpointsBuilder : IEndpointBuilder
 {
     private readonly IEndpointRouteBuilder _routeBuilder;
-    private readonly IHttpContextAccessor _httpContextAccessor;
     private readonly WebApiDefinitionList _webApiDefinitionList;
 
-    public EndpointsBuilder(IEndpointRouteBuilder routeBuilder, IHttpContextAccessor httpContextAccessor, WebApiDefinitionList webApiDefinitionList)
+    public EndpointsBuilder(IEndpointRouteBuilder routeBuilder, WebApiDefinitionList webApiDefinitionList)
     {
         _routeBuilder = routeBuilder;
-        _httpContextAccessor = httpContextAccessor;
         _webApiDefinitionList = webApiDefinitionList;
     }
 
-    public IEndpointBuilder AddGet<TQuery, TResult>(string path)
+    public IEndpointBuilder AddGet<TQuery, TResult>(string path, Func<TQuery, HttpContext, Task> handler)
     {
         // var queryDispatcher = _httpContextAccessor.HttpContext?.RequestServices.GetRequiredService<IQueryDispatcher>();
         // queryDispatcher.DispatchAsync<TResult, TQuery>();
         AddQueryRouting<TQuery,TResult>(path);
-        _routeBuilder.MapGet(path,null!);
+        _routeBuilder.MapGet(path, handler);
         
         return this;
     }
     
-    public IEndpointBuilder AddPost<TCommand>(string path)
+    public IEndpointBuilder AddPost<TCommand>(string path, Func<TCommand, HttpContext, Task> context)
     {
-        _routeBuilder.MapPost(path,null!);
+        _routeBuilder.MapPost(path,context);
         AddCommandRouting<TCommand>(path);
         
         return this;

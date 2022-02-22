@@ -12,7 +12,7 @@ internal sealed class CommandDispatcher : ICommandDispatcher
         _serviceProvider = serviceProvider;
     }
 
-    async Task ICommandDispatcher.DispatchAsync<TCommand>(TCommand command) where TCommand : class
+    public async Task DispatchAsync<TCommand>(TCommand command) where TCommand : class, ICommand
     {
         var handler = _serviceProvider.GetRequiredService<ICommandHandler<TCommand>>();
         await handler.HandleCommandAsync(command);
