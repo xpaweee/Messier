@@ -20,7 +20,7 @@ public class EndpointsDispatcher : IEndpointDispatcher
     {
         _endpointBuilder.AddGet<TQuery, TResult>(path, async (query, context) =>
         {
-            var dispatcher = context.RequestServices.GetService<IQueryDispatcher>();
+            var dispatcher = context.RequestServices.GetRequiredService<IQueryDispatcher>();
             var result = await dispatcher.DispatchAsync<TQuery, TResult>(query);
 
             if (result is null)
