@@ -2,18 +2,21 @@ using Messier.Api.Exception.Interfaces;
 using Messier.Api.Exception.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using Open.Serialization.Json;
 
 namespace Messier.Api.Exception;
 
 public class ErrorHandlerMiddleware : IMiddleware
 {
-    private ILogger<ErrorHandlerMiddleware> _logger;
-    private IExceptionToMessageMapper _exceptionToMessageMapper;
+    private readonly ILogger<ErrorHandlerMiddleware> _logger;
+    private readonly IExceptionToMessageMapper _exceptionToMessageMapper;
+    private readonly IJsonSerializer _jsonSerializer;
 
-    public ErrorHandlerMiddleware(ILogger<ErrorHandlerMiddleware> logger, IExceptionToMessageMapper exceptionToMessageMapper)
+    public ErrorHandlerMiddleware(ILogger<ErrorHandlerMiddleware> logger, IExceptionToMessageMapper exceptionToMessageMapper, IJsonSerializer jsonSerializer)
     {
         _logger = logger;
         _exceptionToMessageMapper = exceptionToMessageMapper;
+        _jsonSerializer = jsonSerializer;
     }
     
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
@@ -34,8 +37,7 @@ public class ErrorHandlerMiddleware : IMiddleware
         ExceptionResponse exceptionResponse = _exceptionToMessageMapper.MapExceptionToMessage(exception);
         context.Response.StatusCode = (int)exceptionResponse.HttpStatusCode;
         
-        //TODO: Add converting to json
-        //context.Response.Body = exceptionResponse.Reponse;
-
+        context.Response.ContentType = "application/json";
+        _jsonSerializer.SerializeAsync(context.Response.Body, exceptionResponse.Reponse);
     }
 }

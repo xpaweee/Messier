@@ -12,9 +12,6 @@ public static class Extensions
     {
         app.UseRouting();  
         
-        //TODO: Add use authorization
-        // if(useAuhtorization)
-
         var webApiDefinitionList = app.ApplicationServices.GetRequiredService<WebApiDefinitionList>();
         
         app.UseEndpoints(endpointRouteBuilder =>
