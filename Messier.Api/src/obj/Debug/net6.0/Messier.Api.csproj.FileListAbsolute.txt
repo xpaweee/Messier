@@ -10,3 +10,10 @@
 /Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/refint/Messier.Api.dll
 /Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.pdb
 /Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/ref/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.CQRS.Commands.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.CQRS.Queries.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.dll
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.CQRS.Commands.pdb
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.CQRS.Queries.pdb
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/bin/Debug/net6.0/Messier.pdb
+/Users/xpaweee/Desktop/Messier/Messier.Api/src/obj/Debug/net6.0/Messier.Api.csproj.CopyComplete
