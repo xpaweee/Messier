@@ -15,7 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Messier.CQRS.Commands\src\Messier.CQRS.Commands.csproj" />
+    <ProjectReference Include="..\..\Messier.CQRS.Events\src\Messier.CQRS.Events.csproj" />
     <ProjectReference Include="..\..\Messier\src\Messier.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS" />
   </ItemGroup>
 
 </Project>

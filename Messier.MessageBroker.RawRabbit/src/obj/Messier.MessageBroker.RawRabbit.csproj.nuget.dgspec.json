@@ -4,6 +4,118 @@
     "/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/Messier.MessageBroker.RawRabbit.csproj": {}
   },
   "projects": {
+    "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj",
+        "projectName": "Messier.CQRS.Commands",
+        "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj",
+        "packagesPath": "/Users/xpaweee/.nuget/packages/",
+        "outputPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xpaweee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj",
+        "projectName": "Messier.CQRS.Events",
+        "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj",
+        "packagesPath": "/Users/xpaweee/.nuget/packages/",
+        "outputPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xpaweee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/Messier.MessageBroker.RawRabbit.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +138,12 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj"
+              },
+              "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj"
+              },
               "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj": {
                 "projectPath": "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj"
               }

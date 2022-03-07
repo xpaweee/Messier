@@ -1892,6 +1892,32 @@
         "runtime": {
           "bin/placeholder/Messier.dll": {}
         }
+      },
+      "Messier.CQRS.Commands/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Messier": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Messier.CQRS.Commands.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messier.CQRS.Commands.dll": {}
+        }
+      },
+      "Messier.CQRS.Events/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Messier": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Messier.CQRS.Events.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messier.CQRS.Events.dll": {}
+        }
       }
     }
   },
@@ -6426,11 +6452,23 @@
       "type": "project",
       "path": "../../Messier/src/Messier.csproj",
       "msbuildProject": "../../Messier/src/Messier.csproj"
+    },
+    "Messier.CQRS.Commands/1.0.0": {
+      "type": "project",
+      "path": "../../Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj",
+      "msbuildProject": "../../Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj"
+    },
+    "Messier.CQRS.Events/1.0.0": {
+      "type": "project",
+      "path": "../../Messier.CQRS.Events/src/Messier.CQRS.Events.csproj",
+      "msbuildProject": "../../Messier.CQRS.Events/src/Messier.CQRS.Events.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Messier >= 1.0.0",
+      "Messier.CQRS.Commands >= 1.0.0",
+      "Messier.CQRS.Events >= 1.0.0",
       "RawRabbit >= 2.0.0-rc5",
       "RawRabbit.DependencyInjection.ServiceCollection >= 2.0.0-rc5",
       "RawRabbit.Enrichers.MessageContext >= 2.0.0-rc5",
@@ -6463,6 +6501,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj": {
+              "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Commands/src/Messier.CQRS.Commands.csproj"
+            },
+            "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj": {
+              "projectPath": "/Users/xpaweee/Desktop/Messier/Messier.CQRS.Events/src/Messier.CQRS.Events.csproj"
+            },
             "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj": {
               "projectPath": "/Users/xpaweee/Desktop/Messier/Messier/src/Messier.csproj"
             }
