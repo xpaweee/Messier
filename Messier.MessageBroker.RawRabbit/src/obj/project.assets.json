@@ -265,6 +265,18 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "Polly/5.3.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Polly.dll": {}
+        }
+      },
       "RabbitMQ.Client/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -322,6 +334,19 @@
           "lib/netstandard1.5/RawRabbit.DependencyInjection.ServiceCollection.dll": {}
         }
       },
+      "RawRabbit.Enrichers.Attributes/2.0.0-rc5": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-rc5"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.Attributes.dll": {}
+        }
+      },
       "RawRabbit.Enrichers.MessageContext/2.0.0-rc5": {
         "type": "package",
         "dependencies": {
@@ -333,6 +358,33 @@
         },
         "runtime": {
           "lib/netstandard1.5/RawRabbit.Enrichers.MessageContext.dll": {}
+        }
+      },
+      "RawRabbit.Enrichers.Polly/2.0.0-rc5": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Polly": "5.3.1",
+          "RawRabbit": "2.0.0-rc5"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.Polly.dll": {}
+        }
+      },
+      "RawRabbit.Enrichers.RetryLater/2.0.0-rc5": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "RawRabbit": "2.0.0-rc5"
+        },
+        "compile": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.RetryLater.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RawRabbit.Enrichers.RetryLater.dll": {}
         }
       },
       "RawRabbit.Operations.Publish/2.0.0-rc5": {
@@ -2266,6 +2318,24 @@
         "tools/install.ps1"
       ]
     },
+    "Polly/5.3.1": {
+      "sha512": "vEAUy16SgCevG0w7POAwQ4jVJ7HFEKibuzORrqg1L8pIpfgFjJbScxHE0BU1CbkRS/tTxshEe0dzDS53oJCLiQ==",
+      "type": "package",
+      "path": "polly/5.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Polly.dll",
+        "lib/net45/Polly.pdb",
+        "lib/net45/Polly.xml",
+        "lib/netstandard1.1/Polly.deps.json",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "polly.5.3.1.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
     "RabbitMQ.Client/5.0.1": {
       "sha512": "89eFEAr5mV5GG2H3d4WFZEuhKmCR+EUjcphZ4+QLEkHPdo7B9kRH6X5WS0c6bHAY/B48uR0GuubnMTp5jGGmrA==",
       "type": "package",
@@ -2307,6 +2377,19 @@
         "rawrabbit.dependencyinjection.servicecollection.nuspec"
       ]
     },
+    "RawRabbit.Enrichers.Attributes/2.0.0-rc5": {
+      "sha512": "jVBSwnDuLVZx40GO+yb7cvLct1Asu0g1Ztz3Sz8SibFlJVWgm2bTgKfRBtGXFpjmVTOdFD3s5VoU247mBSA+WA==",
+      "type": "package",
+      "path": "rawrabbit.enrichers.attributes/2.0.0-rc5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.Enrichers.Attributes.dll",
+        "lib/netstandard1.5/RawRabbit.Enrichers.Attributes.dll",
+        "rawrabbit.enrichers.attributes.2.0.0-rc5.nupkg.sha512",
+        "rawrabbit.enrichers.attributes.nuspec"
+      ]
+    },
     "RawRabbit.Enrichers.MessageContext/2.0.0-rc5": {
       "sha512": "glkSG74oaXZsqZ43GvyoQUASJs9PQoQpRVM5F/lhEE5z235wdGgnrSoWf3yR1M8yC81dw0tqxHDxedbV15ooGQ==",
       "type": "package",
@@ -2318,6 +2401,32 @@
         "lib/netstandard1.5/RawRabbit.Enrichers.MessageContext.dll",
         "rawrabbit.enrichers.messagecontext.2.0.0-rc5.nupkg.sha512",
         "rawrabbit.enrichers.messagecontext.nuspec"
+      ]
+    },
+    "RawRabbit.Enrichers.Polly/2.0.0-rc5": {
+      "sha512": "FN4VBMi5CD7Iw1PuIRcD5EwAvmdkFJ+7WhcQ/0cqAyoryvzeYXCs717i+jucajkcsvo04HhqjUrfxNkB0MWxQA==",
+      "type": "package",
+      "path": "rawrabbit.enrichers.polly/2.0.0-rc5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.Enrichers.Polly.dll",
+        "lib/netstandard1.5/RawRabbit.Enrichers.Polly.dll",
+        "rawrabbit.enrichers.polly.2.0.0-rc5.nupkg.sha512",
+        "rawrabbit.enrichers.polly.nuspec"
+      ]
+    },
+    "RawRabbit.Enrichers.RetryLater/2.0.0-rc5": {
+      "sha512": "wdmsVGzv49GUNkVhuRoCdkcdQRMM2Gm6c16nPFMeJPBV5CO2nZNxLE/x5v8o3A+KxMlhTiBGwEkMPihglEj/yg==",
+      "type": "package",
+      "path": "rawrabbit.enrichers.retrylater/2.0.0-rc5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/RawRabbit.Enrichers.RetryLater.dll",
+        "lib/netstandard1.5/RawRabbit.Enrichers.RetryLater.dll",
+        "rawrabbit.enrichers.retrylater.2.0.0-rc5.nupkg.sha512",
+        "rawrabbit.enrichers.retrylater.nuspec"
       ]
     },
     "RawRabbit.Operations.Publish/2.0.0-rc5": {
@@ -6471,7 +6580,10 @@
       "Messier.CQRS.Events >= 1.0.0",
       "RawRabbit >= 2.0.0-rc5",
       "RawRabbit.DependencyInjection.ServiceCollection >= 2.0.0-rc5",
+      "RawRabbit.Enrichers.Attributes >= 2.0.0-rc5",
       "RawRabbit.Enrichers.MessageContext >= 2.0.0-rc5",
+      "RawRabbit.Enrichers.Polly >= 2.0.0-rc5",
+      "RawRabbit.Enrichers.RetryLater >= 2.0.0-rc5",
       "RawRabbit.Operations.Publish >= 2.0.0-rc5",
       "RawRabbit.Operations.Subscribe >= 2.0.0-rc5"
     ]
@@ -6531,7 +6643,19 @@
             "target": "Package",
             "version": "[2.0.0-rc5, )"
           },
+          "RawRabbit.Enrichers.Attributes": {
+            "target": "Package",
+            "version": "[2.0.0-rc5, )"
+          },
           "RawRabbit.Enrichers.MessageContext": {
+            "target": "Package",
+            "version": "[2.0.0-rc5, )"
+          },
+          "RawRabbit.Enrichers.Polly": {
+            "target": "Package",
+            "version": "[2.0.0-rc5, )"
+          },
+          "RawRabbit.Enrichers.RetryLater": {
             "target": "Package",
             "version": "[2.0.0-rc5, )"
           },

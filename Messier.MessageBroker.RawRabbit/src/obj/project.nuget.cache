@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "54d20OVE21BivpO71aqckCi84Ilb5K79kb6Epjnku0Sff751P8sFH2DDVWSsROhcYKjXd40Sa7yc/Q01jSMZMQ==",
+  "dgSpecHash": "0Vb9oYNc4uA7EQFS1o+HmkEM+vMLoJ+CgXwrD1oieXgQ49g5ATRUrpGRXiPse35TN9RORZ09YT0d0zU/KXJqxA==",
   "success": true,
   "projectFilePath": "/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/Messier.MessageBroker.RawRabbit.csproj",
   "expectedPackageFiles": [
@@ -19,10 +19,14 @@
     "/Users/xpaweee/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/newtonsoft.json/10.0.1/newtonsoft.json.10.0.1.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/polly/5.3.1/polly.5.3.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rabbitmq.client/5.0.1/rabbitmq.client.5.0.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rawrabbit/2.0.0-rc5/rawrabbit.2.0.0-rc5.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rawrabbit.dependencyinjection.servicecollection/2.0.0-rc5/rawrabbit.dependencyinjection.servicecollection.2.0.0-rc5.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/rawrabbit.enrichers.attributes/2.0.0-rc5/rawrabbit.enrichers.attributes.2.0.0-rc5.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rawrabbit.enrichers.messagecontext/2.0.0-rc5/rawrabbit.enrichers.messagecontext.2.0.0-rc5.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/rawrabbit.enrichers.polly/2.0.0-rc5/rawrabbit.enrichers.polly.2.0.0-rc5.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/rawrabbit.enrichers.retrylater/2.0.0-rc5/rawrabbit.enrichers.retrylater.2.0.0-rc5.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rawrabbit.operations.publish/2.0.0-rc5/rawrabbit.operations.publish.2.0.0-rc5.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/rawrabbit.operations.subscribe/2.0.0-rc5/rawrabbit.operations.subscribe.2.0.0-rc5.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
