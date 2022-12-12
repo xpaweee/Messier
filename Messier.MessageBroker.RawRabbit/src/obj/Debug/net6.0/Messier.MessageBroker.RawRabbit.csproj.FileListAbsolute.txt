@@ -1,5 +1,0 @@
-/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/obj/Debug/net6.0/Messier.MessageBroker.RawRabbit.csproj.AssemblyReference.cache
-/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/obj/Debug/net6.0/Messier.MessageBroker.RawRabbit.GeneratedMSBuildEditorConfig.editorconfig
-/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/obj/Debug/net6.0/Messier.MessageBroker.RawRabbit.AssemblyInfoInputs.cache
-/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/obj/Debug/net6.0/Messier.MessageBroker.RawRabbit.AssemblyInfo.cs
-/Users/xpaweee/Desktop/Messier/Messier.MessageBroker.RawRabbit/src/obj/Debug/net6.0/Messier.MessageBroker.RawRabbit.csproj.CoreCompileInputs.cache

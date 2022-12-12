@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "kN+6/4iw/VuAqRmZW0s5jaUdSpYr/gw9VC2xSKX0Xw07prCzvwiy6e4c2kygG3uBC1S3+oguBuQ40KnKDY9Exg==",
+  "success": true,
+  "projectFilePath": "/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/Messier.CQRS.Queries.csproj",
+  "expectedPackageFiles": [
+    "/Users/xpaweee/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/microsoft.extensions.dependencymodel/6.0.0/microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/scrutor/4.2.0/scrutor.4.2.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

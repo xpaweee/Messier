@@ -1,0 +1,15 @@
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/bin/Debug/net6.0/Messier.CQRS.Queries.deps.json
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/bin/Debug/net6.0/Messier.CQRS.Queries.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/bin/Debug/net6.0/Messier.CQRS.Queries.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/bin/Debug/net6.0/Messier.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/bin/Debug/net6.0/Messier.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.csproj.AssemblyReference.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.AssemblyInfoInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.AssemblyInfo.cs
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.csproj.CoreCompileInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.csproj.CopyComplete
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/refint/Messier.CQRS.Queries.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/Messier.CQRS.Queries.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Queries/obj/Debug/net6.0/ref/Messier.CQRS.Queries.dll
