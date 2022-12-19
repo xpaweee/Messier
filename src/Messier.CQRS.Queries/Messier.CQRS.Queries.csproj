@@ -6,10 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Messier\Messier.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="Scrutor" Version="4.2.0" />
     </ItemGroup>
 

@@ -7,11 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Messier\Messier.csproj" />
+      <PackageReference Include="Scrutor" Version="4.2.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Scrutor" Version="4.2.0" />
+      <ProjectReference Include="..\Messier\Messier.csproj" />
     </ItemGroup>
 
 </Project>

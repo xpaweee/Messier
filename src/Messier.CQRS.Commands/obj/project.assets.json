@@ -113,11 +113,27 @@
       "Messier/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Messier.Api": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Messier.dll": {}
         },
         "runtime": {
           "bin/placeholder/Messier.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Messier.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Messier.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messier.Api.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -357,6 +373,11 @@
       "type": "project",
       "path": "../Messier/Messier.csproj",
       "msbuildProject": "../Messier/Messier.csproj"
+    },
+    "Messier.Api/1.0.0": {
+      "type": "project",
+      "path": "../Messier.Api/Messier.Api.csproj",
+      "msbuildProject": "../Messier.Api/Messier.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {

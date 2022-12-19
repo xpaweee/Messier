@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a4M45OaNa4MOZZ3cnLVIOQvio4nqykAbFFlsvjkUcNWepnGk20h1Vis1hOpj0wtzXZf70Yg+Y4u/DZuuFjZiZQ==",
+  "dgSpecHash": "DlsJJoaEGWCk0OQIQykPWZyodxl5bbRZwyoQos55TZIIDmlU4ckerKbNhoF6Wnhrxyf7gYGLjQPi/d8hExtdVQ==",
   "success": true,
   "projectFilePath": "/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Events/Messier.CQRS.Events.csproj",
   "expectedPackageFiles": [

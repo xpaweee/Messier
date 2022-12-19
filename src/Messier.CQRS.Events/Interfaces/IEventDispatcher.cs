@@ -1,3 +1,5 @@
+using Messier.Interfaces;
+
 namespace Messier.CQRS.Events.Interfaces;
 
 public interface IEventDispatcher

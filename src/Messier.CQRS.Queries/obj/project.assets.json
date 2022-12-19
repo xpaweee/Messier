@@ -109,19 +109,6 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
-      },
-      "Messier/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Messier.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Messier.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -352,16 +339,10 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "Messier/1.0.0": {
-      "type": "project",
-      "path": "../Messier/Messier.csproj",
-      "msbuildProject": "../Messier/Messier.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Messier >= 1.0.0",
       "Scrutor >= 4.2.0"
     ]
   },
@@ -389,11 +370,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj": {
-              "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -423,9 +400,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Messier.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Messier.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messier.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Messier.Api/1.0.0": {
+      "type": "project",
+      "path": "../Messier.Api/Messier.Api.csproj",
+      "msbuildProject": "../Messier.Api/Messier.Api.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Messier.Api >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/xpaweee/.nuget/packages/": {}
@@ -31,7 +53,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj": {
+              "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

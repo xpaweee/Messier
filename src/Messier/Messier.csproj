@@ -7,7 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
+      <ProjectReference Include="..\Messier.Api\Messier.Api.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+        <HintPath>..\..\..\..\..\..\usr\local\share\dotnet\x64\shared\Microsoft.AspNetCore.App\5.0.15\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+
 
 </Project>

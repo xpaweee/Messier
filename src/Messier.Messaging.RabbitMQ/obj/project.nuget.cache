@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "H1oP+7xjf6W2ILK1iDvR6KUjSv/u4s51JT+aLIiOiQdUapWgBjsXk3TGLVxdsVqyjPia3IN2Skl3nydBb1cCWw==",
+  "success": true,
+  "projectFilePath": "/Users/xpaweee/Desktop/Messier/src/Messier.Messaging.RabbitMQ/Messier.Messaging.RabbitMQ.csproj",
+  "expectedPackageFiles": [
+    "/Users/xpaweee/.nuget/packages/easynetq/6.5.2/easynetq.6.5.2.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/xpaweee/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

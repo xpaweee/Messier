@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lbBhFZxGSnQ+7UcEwTc/sZUxcFKd906NYkBPPW2nwVY3pnGJE8e7uG350bzHBne8/XD7RlHZFt4Ip7+Qb986Jw==",
+  "dgSpecHash": "G/UedFcx6wu61cc7USY2BlhSI1z486EzuDs06JgA3XvEvIxd6R747e2xY/X+WofB9G1OdTxLSUvGyfTUhqknJQ==",
   "success": true,
   "projectFilePath": "/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Commands/Messier.CQRS.Commands.csproj",
   "expectedPackageFiles": [

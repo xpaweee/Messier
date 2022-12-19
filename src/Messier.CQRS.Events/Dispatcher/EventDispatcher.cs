@@ -1,4 +1,5 @@
 using Messier.CQRS.Events.Interfaces;
+using Messier.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Messier.CQRS.Events.Dispatcher;
