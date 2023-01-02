@@ -21,9 +21,9 @@ public class MessageHandler : IMessageHandler
         {
             await handler(_serviceProvider, message, cancellationToken);
         }
-        catch (Exception e)
+        catch (Exception exception)
         {
-            _logger.LogError(e, e.Message);
+            _logger.LogError(exception, exception.Message);
             throw;
         }    
     }

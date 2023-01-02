@@ -10,3 +10,6 @@
 /Users/xpaweee/Desktop/Messier/src/Messier/obj/Debug/net6.0/refint/Messier.dll
 /Users/xpaweee/Desktop/Messier/src/Messier/obj/Debug/net6.0/Messier.pdb
 /Users/xpaweee/Desktop/Messier/src/Messier/obj/Debug/net6.0/ref/Messier.dll
+/Users/xpaweee/Desktop/Messier/src/Messier/bin/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/src/Messier/bin/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier/obj/Debug/net6.0/Messier.csproj.CopyComplete

@@ -28,10 +28,8 @@ internal sealed class RabbitmqSubscriber : IMessageSubscriber
     {
         var messageDetails = typeof(TCommand).GetCustomAttribute<MessageAttribute>();
 
-        _bus.PubSub.SubscribeAsync<TCommand>(messageDetails.SubscriptionId, (message, cancellationToken) =>
-        {
-            return _messageHandler.HandleAsync(handler, message, cancellationToken);
-        }, null);
+        _bus.PubSub.SubscribeAsync<TCommand>(messageDetails.SubscriptionId, (message, cancellationToken) 
+            => _messageHandler.HandleAsync(handler, message, cancellationToken), null);
 
         return this;
     }
