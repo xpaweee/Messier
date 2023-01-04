@@ -1,7 +1,14 @@
 using EasyNetQ;
+using EasyNetQ.Consumer;
+using Humanizer;
+using Messier.Api;
 using Messier.Messaging.Interfaces;
 using Messier.Messaging.RabbitMQ.Base;
 using Messier.Messaging.RabbitMQ.Conventions;
+using Messier.Messaging.RabbitMQ.Factory;
+using Messier.Messaging.RabbitMQ.Interfaces;
+using Messier.Messaging.RabbitMQ.Registry;
+using Messier.Messaging.RabbitMQ.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
@@ -24,6 +31,10 @@ public static class Extensions
             return serviceCollection;
         }
 
+        var contextAccessor = new ContextAccessor();
+        var messageContextAccessor = new MessageContextAccessor();
+        var messageTypeRegistry = new MessageTypeRegistry();;
+        
         // var bus = RabbitHutch.CreateBus(options.ConnectionString,services => services.Register<IConventions>(c => new CustomConventions2(c.Resolve<ITypeNameSerializer>()))); 
         var bus = RabbitHutch.CreateBus(options.ConnectionString, registerServices =>
         {
@@ -38,13 +49,25 @@ public static class Extensions
             });
             
             registerServices.Register(typeof(IConventions), typeof(CustomConventions));
+            registerServices.Register(typeof(IMessageSerializationStrategy), typeof(CustomMessageSerializationStrategy));
+            registerServices.Register(typeof(IHandlerCollectionFactory), typeof(CustomHandlerCollectionFactory));
+            registerServices.Register(typeof(IMessageTypeRegistry), messageTypeRegistry);
+            registerServices.Register(typeof(IContextAccessor), contextAccessor);
+            registerServices.Register(typeof(IMessageContextAccessor), messageContextAccessor);
         });
         
         serviceCollection.AddSingleton(bus);
         serviceCollection.AddSingleton<IMessageClient, RabbitmqClient>();
         serviceCollection.AddSingleton<IMessageSubscriber, RabbitmqSubscriber>();
         serviceCollection.AddSingleton<IMessageHandler, MessageHandler>();
+        serviceCollection.AddSingleton<IMessageTypeRegistry>(messageTypeRegistry);
+        serviceCollection.AddSingleton<IContextAccessor>(contextAccessor);
+        serviceCollection.AddSingleton<IMessageContextAccessor>(messageContextAccessor);
+        
+        serviceCollection.AddSingleton<IMessageTypeRegistry>(messageTypeRegistry);
 
         return serviceCollection;
     }
+    
+    internal static string ToMessageKey(this string messageType) => messageType.Underscore();
 }

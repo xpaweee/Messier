@@ -18,7 +18,16 @@ internal sealed class RabbitmqClient : IMessageClient
     
     public async Task SendAsync<TMessage>(TMessage message, CancellationToken cancellationToken) where TMessage : IMessage
     {
-        _logger.LogInformation($"Sending a message: {message.GetType().Name}");
-        await _bus.PubSub.PublishAsync(message, cancellationToken);
+        try
+        {
+            _logger.LogInformation($"Sending a message: {message.GetType().Name}");
+            await _bus.PubSub.PublishAsync(message, cancellationToken);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+   
     }
 }

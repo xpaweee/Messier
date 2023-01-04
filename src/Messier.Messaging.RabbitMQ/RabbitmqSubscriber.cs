@@ -13,11 +13,13 @@ internal sealed class RabbitmqSubscriber : IMessageSubscriber
 {
     private readonly IBus _bus;
     private readonly IMessageHandler _messageHandler;
+    private readonly IMessageTypeRegistry _messageTypeRegistry;
     
-    public RabbitmqSubscriber(IBus bus, IMessageHandler messageHandler)
+    public RabbitmqSubscriber(IBus bus, IMessageHandler messageHandler, IMessageTypeRegistry messageTypeRegistry)
     {
         _bus = bus;
         _messageHandler = messageHandler;
+        _messageTypeRegistry = messageTypeRegistry;
     }
     
     public IMessageSubscriber Command<TCommand>() where TCommand : class, ICommand
@@ -26,10 +28,23 @@ internal sealed class RabbitmqSubscriber : IMessageSubscriber
 
     public IMessageSubscriber Message<TCommand>(Func<IServiceProvider, TCommand, CancellationToken, Task> handler) where TCommand : class, IMessage
     {
-        var messageDetails = typeof(TCommand).GetCustomAttribute<MessageAttribute>();
+        _messageTypeRegistry.Register<TCommand>();
+        var messageAttribute = typeof(TCommand).GetCustomAttribute<MessageAttribute>() ?? new MessageAttribute();
 
-        _bus.PubSub.SubscribeAsync<TCommand>(messageDetails.SubscriptionId, (message, cancellationToken) 
-            => _messageHandler.HandleAsync(handler, message, cancellationToken), null);
+        _bus.PubSub.SubscribeAsync<TCommand>(messageAttribute.SubscriptionId,
+            (message, cancellationToken) => _messageHandler.HandleAsync(handler, message, cancellationToken),
+            configuration =>
+            {
+                if (!string.IsNullOrWhiteSpace(messageAttribute.Topic))
+                {
+                    configuration.WithTopic(messageAttribute.Topic);
+                }
+
+                if (!string.IsNullOrWhiteSpace(messageAttribute.Queue))
+                {
+                    configuration.WithQueueName(messageAttribute.Queue);
+                }
+            });
 
         return this;
     }
