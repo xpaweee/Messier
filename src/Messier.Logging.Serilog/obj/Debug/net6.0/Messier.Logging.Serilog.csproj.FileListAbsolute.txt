@@ -1,0 +1,17 @@
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.Logging.Serilog.deps.json
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.Logging.Serilog.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.Logging.Serilog.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/bin/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.csproj.AssemblyReference.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.AssemblyInfoInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.AssemblyInfo.cs
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.csproj.CoreCompileInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.csproj.CopyComplete
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/refint/Messier.Logging.Serilog.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/Messier.Logging.Serilog.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/Debug/net6.0/ref/Messier.Logging.Serilog.dll

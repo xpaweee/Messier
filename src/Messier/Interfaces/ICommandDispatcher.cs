@@ -1,6 +1,4 @@
-using Messier.Interfaces;
-
-namespace Messier.CQRS.Commands.Interfaces;
+namespace Messier.Interfaces;
 
 public interface ICommandDispatcher
 {

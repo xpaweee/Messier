@@ -715,7 +715,8 @@
         "dependencies": {
           "Humanizer": "2.14.1",
           "Messier.Api": "1.0.0",
-          "Newtonsoft.Json": "13.0.2"
+          "Newtonsoft.Json": "13.0.2",
+          "Scrutor": "4.2.0"
         },
         "compile": {
           "bin/placeholder/Messier.dll": {}

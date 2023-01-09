@@ -1,0 +1,212 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/Messier.Logging.Serilog.csproj": {}
+  },
+  "projects": {
+    "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj",
+        "projectName": "Messier.Api",
+        "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj",
+        "packagesPath": "/Users/xpaweee/.nuget/packages/",
+        "outputPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xpaweee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/Messier.Logging.Serilog.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/Messier.Logging.Serilog.csproj",
+        "projectName": "Messier.Logging.Serilog",
+        "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/Messier.Logging.Serilog.csproj",
+        "packagesPath": "/Users/xpaweee/.nuget/packages/",
+        "outputPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Logging.Serilog/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xpaweee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj",
+        "projectName": "Messier",
+        "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj",
+        "packagesPath": "/Users/xpaweee/.nuget/packages/",
+        "outputPath": "/Users/xpaweee/Desktop/Messier/src/Messier/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/xpaweee/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj": {
+                "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Api/Messier.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

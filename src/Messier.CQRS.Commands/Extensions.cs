@@ -1,6 +1,6 @@
 using System.Reflection;
 using Messier.CQRS.Commands.Dispatchers;
-using Messier.CQRS.Commands.Interfaces;
+using Messier.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Messier.CQRS.Commands;

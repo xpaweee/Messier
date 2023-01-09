@@ -1,3 +1,4 @@
+using Messier.Base;
 using Messier.Interfaces;
 using Messier.Time;
 using Microsoft.Extensions.Configuration;
@@ -7,10 +8,12 @@ namespace Messier;
 
 public static class Extensions
 {
-    public static IServiceCollection AddMessier(this IServiceCollection services)
+    private const string _appSectionName = "app";
+    public static IServiceCollection AddMessier(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddSingleton<IClock, Clock>();
-
+        services.Configure<AppOptions>(configuration.GetSection(_appSectionName));
+        
         return services;
     }
     

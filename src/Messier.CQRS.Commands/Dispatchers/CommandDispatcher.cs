@@ -1,4 +1,3 @@
-using Messier.CQRS.Commands.Interfaces;
 using Messier.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
