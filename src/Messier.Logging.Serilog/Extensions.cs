@@ -50,10 +50,10 @@ public static class Extensions
             {
                 loggerConfiguration.WriteTo.Seq(serilogOptions.Seq.Url, apiKey: serilogOptions.Seq.Apikey);
             }
-            else
+
+            if (serilogOptions.Console.Enabled)
             {
-                loggerConfiguration.WriteTo.Console(
-                    outputTemplate: "{Timestamp:HH:mm:ss} [{Level:u3}] {Message}{NewLine}{Exception}");
+                loggerConfiguration.WriteTo.Console(outputTemplate: "{Timestamp:HH:mm:ss} [{Level:u3}] {Message}{NewLine}{Exception}");
             }
 
             configure?.Invoke(loggerConfiguration);

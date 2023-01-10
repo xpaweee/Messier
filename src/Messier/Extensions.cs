@@ -11,9 +11,13 @@ public static class Extensions
     private const string _appSectionName = "app";
     public static IServiceCollection AddMessier(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddSingleton<IClock, Clock>();
-        services.Configure<AppOptions>(configuration.GetSection(_appSectionName));
+        var appSection = configuration.GetSection(_appSectionName);
+        var appOptions = appSection.BindOptions<AppOptions>();
         
+        services.AddSingleton<IClock, Clock>();
+        services.Configure<AppOptions>(appSection);
+        
+        Console.WriteLine(Figgle.FiggleFonts.Slant.Render($"{appOptions.Name} {appOptions.Version}"));
         return services;
     }
     

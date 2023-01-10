@@ -17,6 +17,14 @@
           "Messier.Logging.Serilog.dll": {}
         }
       },
+      "Figgle/0.5.1": {
+        "runtime": {
+          "lib/netstandard2.0/Figgle.dll": {
+            "assemblyVersion": "0.5.1.0",
+            "fileVersion": "0.5.1.0"
+          }
+        }
+      },
       "Humanizer/2.14.1": {
         "dependencies": {
           "Humanizer.Core.af": "2.14.1",
@@ -802,6 +810,7 @@
       },
       "Messier/1.0.0": {
         "dependencies": {
+          "Figgle": "0.5.1",
           "Humanizer": "2.14.1",
           "Messier.Api": "1.0.0",
           "Newtonsoft.Json": "13.0.2",
@@ -823,6 +832,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Figgle/0.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F21k9oOGRgSb+1dCX0kFDYRBbShSMFvL49xjNmF/dsJwiN5M7zBaSWsYKpi/KZWXVIIxNzTbNTq9ZciucaHYMQ==",
+      "path": "figgle/0.5.1",
+      "hashPath": "figgle.0.5.1.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

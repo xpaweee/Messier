@@ -19,6 +19,7 @@ public class MessageHandler : IMessageHandler
     {
         try
         {
+            _logger.LogInformation($"Handling message {message.GetType().Name}");
             await handler(_serviceProvider, message, cancellationToken);
         }
         catch (Exception exception)

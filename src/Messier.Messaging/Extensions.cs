@@ -4,5 +4,5 @@ namespace Messier.Messaging;
 
 public static class Extensions
 {
-    //TODO: To implement;
+    
 }
