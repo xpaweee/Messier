@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bcu0fFCRCbeYB6J/w0ic5pMHT6EGpBZfgYkS9D8RQ9rEuwM8d02H9EBmfm7tNmMD43sUmfTf9Ujv3ErveSFTgw==",
+  "dgSpecHash": "fG+ujWH0FhZXfgpt00fdQ2ecn2YIjhYPi9FP4RQg2bAmNBE1AKamm+NsXRH24Ko12fdnDVfkAi1/yOlcT58b8g==",
   "success": true,
   "projectFilePath": "/Users/xpaweee/Desktop/Messier/src/Messier.CQRS.Commands/Messier.CQRS.Commands.csproj",
   "expectedPackageFiles": [
+    "/Users/xpaweee/.nuget/packages/figgle/0.5.1/figgle.0.5.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/xpaweee/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

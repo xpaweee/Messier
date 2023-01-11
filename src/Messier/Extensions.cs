@@ -1,6 +1,8 @@
+using Messier.Api;
 using Messier.Base;
 using Messier.Interfaces;
 using Messier.Time;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -15,6 +17,10 @@ public static class Extensions
         var appOptions = appSection.BindOptions<AppOptions>();
         
         services.AddSingleton<IClock, Clock>();
+        services.AddHttpContextAccessor();
+        services.AddSingleton<IContextProvider, ContextProvider>();
+        services.AddSingleton<IContextAccessor, ContextAccessor>();
+        
         services.Configure<AppOptions>(appSection);
         
         Console.WriteLine(Figgle.FiggleFonts.Slant.Render($"{appOptions.Name} {appOptions.Version}"));
@@ -30,4 +36,8 @@ public static class Extensions
         section.Bind(options);
         return options;
     }
+    
+    private const string CorrelationIdKey = "correlation-id";
+    public static string? GetCorrelationId(this HttpContext context)
+        => context.Items.TryGetValue(CorrelationIdKey, out var correlationId) ? correlationId?.ToString(): null;
 }

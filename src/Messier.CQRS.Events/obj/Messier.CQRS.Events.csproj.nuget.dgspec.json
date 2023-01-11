@@ -164,6 +164,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Figgle": {
+              "target": "Package",
+              "version": "[0.5.1, )"
+            },
             "Humanizer": {
               "target": "Package",
               "version": "[2.14.1, )"

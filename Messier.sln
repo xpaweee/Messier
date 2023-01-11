@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier.Logging.Serilog", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier.Observability.Jaeger", "src\Messier.Observability.Jaeger\Messier.Observability.Jaeger.csproj", "{4D59E310-74A3-4C05-A804-25966708022D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messier.Metrics.Prometheus", "src\Messier.Metrics.Prometheus\Messier.Metrics.Prometheus.csproj", "{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{4D59E310-74A3-4C05-A804-25966708022D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D59E310-74A3-4C05-A804-25966708022D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D59E310-74A3-4C05-A804-25966708022D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{921074E2-C809-412E-8F28-256B261769D9} = {E9E942D9-405E-4CAD-BCE6-28DD6D10504C}
@@ -79,5 +85,6 @@ Global
 		{6CB4B698-3BA8-402F-913D-A1298D629E9D} = {E9E942D9-405E-4CAD-BCE6-28DD6D10504C}
 		{DB0AB9C0-63C9-4572-97A4-F2B02A41FDBE} = {E9E942D9-405E-4CAD-BCE6-28DD6D10504C}
 		{4D59E310-74A3-4C05-A804-25966708022D} = {E9E942D9-405E-4CAD-BCE6-28DD6D10504C}
+		{D2458AD3-45F1-4CBB-B8FF-6AD9F817311C} = {E9E942D9-405E-4CAD-BCE6-28DD6D10504C}
 	EndGlobalSection
 EndGlobal

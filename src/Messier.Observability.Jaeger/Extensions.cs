@@ -53,6 +53,7 @@ public static class Extensions
             {
                 configure.AgentHost = options.Jaeger.AgentHost;
                 configure.AgentPort = options.Jaeger.AgentPort;
+                configure.MaxPayloadSizeInBytes = 4028;
                 configure.ExportProcessorType = ExportProcessorType.Batch;
             });
         });
