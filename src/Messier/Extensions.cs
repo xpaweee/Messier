@@ -23,7 +23,7 @@ public static class Extensions
         
         services.Configure<AppOptions>(appSection);
         
-        Console.WriteLine(Figgle.FiggleFonts.Slant.Render($"{appOptions.Name} {appOptions.Version}"));
+        Console.WriteLine(Figgle.FiggleFonts.Standard.Render($"{appOptions.Name} {appOptions.Version}"));
         return services;
     }
     

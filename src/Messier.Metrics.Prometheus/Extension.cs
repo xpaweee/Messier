@@ -2,9 +2,9 @@ using System.Reflection;
 using Messier.Messaging.Interfaces;
 using Messier.Metrics.Prometheus.Attributes;
 using Messier.Metrics.Prometheus.Decorators;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OpenTelemetry.Exporter;
 using OpenTelemetry.Metrics;
 
 namespace Messier.Metrics.Prometheus;
@@ -27,24 +27,28 @@ public static class Extension
      
         services.AddOpenTelemetryMetrics(builder =>
             {
-                // var attributes = GetMeterAttributes();
-                // foreach (var attribute in attributes)
-                // {
-                //     builder.AddMeter(attribute.Key);
-                // }
-                
                 builder.AddAspNetCoreInstrumentation();
                 builder.AddHttpClientInstrumentation();
                 builder.AddRuntimeInstrumentation();
-
-                builder.AddPrometheusExporter(prometheus => { prometheus.ScrapeEndpointPath = options.Endpoint; });
+                builder.AddPrometheusExporter(prometheus =>
+                {
+                    prometheus.ScrapeResponseCacheDurationMilliseconds = 0;
+                    prometheus.ScrapeEndpointPath = options.Endpoint;
+                });
             });
 
         services.TryDecorate<IMessageClient, MessageBrokerMetricsDecorator>();
         
         return services;
     }
-    
+
+    public static IApplicationBuilder UseMetrics(this IApplicationBuilder builder)
+    {
+       
+        builder.UseOpenTelemetryPrometheusScrapingEndpoint();
+
+        return builder;
+    }
     private static IEnumerable<MeterAttribute?> GetMeterAttributes()
         => AppDomain.CurrentDomain.GetAssemblies()
             .Where(x => !x.IsDynamic)
