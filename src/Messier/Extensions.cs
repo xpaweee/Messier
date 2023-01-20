@@ -22,6 +22,7 @@ public static class Extensions
         services.AddSingleton<IContextAccessor, ContextAccessor>();
         
         services.Configure<AppOptions>(appSection);
+        services.AddSingleton(appOptions);
         
         Console.WriteLine(Figgle.FiggleFonts.Standard.Render($"{appOptions.Name} {appOptions.Version}"));
         return services;

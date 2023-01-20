@@ -1,0 +1,17 @@
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.Consul.deps.json
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.Consul.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.Consul.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/bin/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.csproj.AssemblyReference.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.AssemblyInfoInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.AssemblyInfo.cs
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.csproj.CoreCompileInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.csproj.CopyComplete
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/refint/Messier.Consul.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/Messier.Consul.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Consul/obj/Debug/net6.0/ref/Messier.Consul.dll
