@@ -1,0 +1,17 @@
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.Fabio.deps.json
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.Fabio.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.Fabio.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.Api.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/bin/Debug/net6.0/Messier.Api.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.csproj.AssemblyReference.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.AssemblyInfoInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.AssemblyInfo.cs
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.csproj.CoreCompileInputs.cache
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.csproj.CopyComplete
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/refint/Messier.Fabio.dll
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/Messier.Fabio.pdb
+/Users/xpaweee/Desktop/Messier/src/Messier.Fabio/obj/Debug/net6.0/ref/Messier.Fabio.dll

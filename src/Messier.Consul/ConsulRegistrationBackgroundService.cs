@@ -21,7 +21,7 @@ public class ConsulRegistrationBackgroundService : IHostedService
         _logger = logger;
         _options = options;
         _serviceName = _options.Value.Service.Name;
-        _serviceId = $"{_serviceName}_${Guid.NewGuid()}";
+        _serviceId = $"{_serviceName}-{Guid.NewGuid()}";
     }
 
 

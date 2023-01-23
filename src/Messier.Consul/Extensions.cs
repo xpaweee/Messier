@@ -28,6 +28,7 @@ public static class Extensions
             consulConfig.Address = new Uri(options.Url);
         }));
         
+        
         return serviceCollection;
     }
     
