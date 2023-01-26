@@ -20,6 +20,7 @@ public static class Extensions
         services.AddHttpContextAccessor();
         services.AddSingleton<IContextProvider, ContextProvider>();
         services.AddSingleton<IContextAccessor, ContextAccessor>();
+        services.AddSingleton<IJsonSerializer, JsonSerializer.JsonSerializer>();
         
         services.Configure<AppOptions>(appSection);
         services.AddSingleton(appOptions);

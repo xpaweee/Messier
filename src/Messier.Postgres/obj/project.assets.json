@@ -953,6 +953,22 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Messier.Messaging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Messier": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Messier.Messaging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messier.Messaging.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2352,11 +2368,17 @@
       "type": "project",
       "path": "../Messier.Api/Messier.Api.csproj",
       "msbuildProject": "../Messier.Api/Messier.Api.csproj"
+    },
+    "Messier.Messaging/1.0.0": {
+      "type": "project",
+      "path": "../Messier.Messaging/Messier.Messaging.csproj",
+      "msbuildProject": "../Messier.Messaging/Messier.Messaging.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Messier >= 1.0.0",
+      "Messier.Messaging >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.1"
     ]
   },
@@ -2385,6 +2407,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/Users/xpaweee/Desktop/Messier/src/Messier.Messaging/Messier.Messaging.csproj": {
+              "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier.Messaging/Messier.Messaging.csproj"
+            },
             "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj": {
               "projectPath": "/Users/xpaweee/Desktop/Messier/src/Messier/Messier.csproj"
             }
