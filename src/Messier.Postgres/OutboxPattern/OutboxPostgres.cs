@@ -13,7 +13,7 @@ using System.Text.Json.Serialization;
 
 namespace Messier.Postgres.OutboxPattern;
 
-public class OutboxPostgres<TType> : IOutboxPostgres where TType : DbContext
+internal sealed class OutboxPostgres<TType> : IOutboxPostgres where TType : DbContext
 {
     private readonly TType _dbContext;
     private readonly IClock _clock;
