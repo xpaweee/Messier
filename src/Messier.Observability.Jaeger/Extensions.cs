@@ -58,7 +58,7 @@ public static class Extensions
             });
         });
 
-        serviceCollection.TryDecorate<IMessageClient, MessageBrokerTracingDecorator>();
+        serviceCollection.TryDecorate<IMessageBroker, MessageBrokerTracingDecorator>();
         serviceCollection.TryDecorate<IMessageHandler, MessageHandlerTracingDecorator>();
 
         return serviceCollection;

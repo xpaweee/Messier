@@ -35,7 +35,7 @@ internal sealed class OutboxPostgres<TType> : IOutboxPostgres where TType : DbCo
         _jsonSerializer = jsonSerializer;
         _outboxMessageEntity = _dbContext.Set<OutboxMessage>();
         _localMessages = new List<OutboxMessage>();
-        _sendMethod = messageClient.GetType().GetMethod(nameof(IMessageClient.SendAsync)) ??
+        _sendMethod = _messageClient.GetType().GetMethod(nameof(IMessageClient.SendAsync)) ??
                       throw new InvalidOperationException("Message broker send method was not defined.");
     }
 
@@ -45,10 +45,10 @@ internal sealed class OutboxPostgres<TType> : IOutboxPostgres where TType : DbCo
         var outBoxMessage = new OutboxMessage()
         {
             Id = message.Context.MessageId,
-            Name = message.GetType().Name.Underscore(),
+            Name = message.Message.GetType().Name.Underscore(),
             Context = _jsonSerializer.Serialize(message.Context),
-            Data = _jsonSerializer.Serialize(message.Message),
-            Type = message.GetType().AssemblyQualifiedName ?? string.Empty,
+            Data = _jsonSerializer.Serialize<object>(message.Message),
+            Type = message.Message.GetType().AssemblyQualifiedName ?? string.Empty,
             CreateDate = _clock.Current()
         };
 
@@ -87,12 +87,17 @@ internal sealed class OutboxPostgres<TType> : IOutboxPostgres where TType : DbCo
     {
         var context = _jsonSerializer.Deserialize<Context>(message.Context) ?? new Context();
         var messageContext = new MessageContext(message.Id, context);
+        
         var messageType = Type.GetType(message.Type);
-        var messageData = _jsonSerializer.Deserialize<IMessage>(message.Data);
-        var messageWrapper = Activator.CreateInstance(messageType, messageData, messageContext);
+        var messageWrapperType = typeof(MessageWrapper<>).MakeGenericType(messageType);
+        
+        var messageData =_jsonSerializer.Deserialize(message.Data, messageType!) as IMessage;
+        
+        
+        var messageWrapper = Activator.CreateInstance(messageWrapperType, messageData, messageContext);
 
         _logger.LogInformation("Sending message from outbox");
-        var sendMessageTask = _sendMethod.Invoke(_messageClient, new[] { messageWrapper, cancellationToken });
+        var sendMessageTask = _sendMethod.MakeGenericMethod(messageType).Invoke(_messageClient, new[] { messageWrapper, cancellationToken });
 
         await (Task) sendMessageTask!;
     }

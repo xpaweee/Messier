@@ -20,7 +20,7 @@ public static class Extensions
         var section = configuration.GetSection(_postgresSectionName);
         var options = section.BindOptions<PostgresOptions>();
         serviceCollection.Configure<PostgresOptions>(section);
-        if (options is null)
+        if (options.ConnectionString == string.Empty)
         {
             return serviceCollection;
         }
@@ -44,9 +44,9 @@ public static class Extensions
             return serviceCollection;
         }
         
-        serviceCollection.AddTransient<IMessageClient, OutboxMessageBroker>();
+        serviceCollection.AddTransient<IMessageBroker, OutboxMessageBroker>();
         serviceCollection.AddHostedService<OutboxSender>();
-        serviceCollection.AddHostedService<OutboxCleaner>();
+        // serviceCollection.AddHostedService<OutboxCleaner>();
 
         return serviceCollection;
     }

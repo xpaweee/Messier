@@ -37,7 +37,7 @@ public static class Extension
                 });
             });
 
-        services.TryDecorate<IMessageClient, MessageBrokerMetricsDecorator>();
+        services.TryDecorate<IMessageBroker, MessageBrokerMetricsDecorator>();
         
         return services;
     }

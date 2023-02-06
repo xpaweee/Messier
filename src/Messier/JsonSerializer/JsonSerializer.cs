@@ -23,4 +23,7 @@ public class JsonSerializer : IJsonSerializer
 
     public TType? Deserialize<TType>(string value)
         => System.Text.Json.JsonSerializer.Deserialize<TType>(value, _options);
+    
+    public object? Deserialize(string value, Type type)
+        => System.Text.Json.JsonSerializer.Deserialize(value,type, _options);
 }

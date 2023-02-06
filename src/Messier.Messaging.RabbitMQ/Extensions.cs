@@ -57,7 +57,7 @@ public static class Extensions
         });
         
         serviceCollection.AddSingleton(bus);
-        serviceCollection.AddSingleton<IMessageClient, RabbitmqClient>();
+        serviceCollection.AddSingleton<IMessageClient, RabbitmqBroker>();
         serviceCollection.AddSingleton<IMessageSubscriber, RabbitmqSubscriber>();
         serviceCollection.AddSingleton<IMessageHandler, MessageHandler>();
         serviceCollection.AddSingleton<IMessageTypeRegistry>(messageTypeRegistry);

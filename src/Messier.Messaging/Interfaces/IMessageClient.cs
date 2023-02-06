@@ -4,5 +4,6 @@ namespace Messier.Messaging.Interfaces;
 
 public interface IMessageClient
 {
-    public Task SendAsync<TMessage>(TMessage message ,CancellationToken cancellationToken) where TMessage : IMessage;
+    Task SendAsync<TType>(MessageWrapper<TType> message, CancellationToken cancellationToken = default)
+        where TType : IMessage;
 }

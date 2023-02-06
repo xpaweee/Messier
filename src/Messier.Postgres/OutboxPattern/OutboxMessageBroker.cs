@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Messier.Postgres.OutboxPattern;
 
-internal sealed class OutboxMessageBroker : IMessageClient
+internal sealed class OutboxMessageBroker : IMessageBroker
 {
     private readonly IOutboxPostgres _outbox;
     private readonly ILogger<OutboxMessageBroker> _logger;

@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
+using Serilog.Filters;
 
 namespace Messier.Logging.Serilog;
 
@@ -46,6 +47,10 @@ public static class Extensions
                 .Enrich.WithProperty("Application", appOptions.Name)
                 .Enrich.WithProperty("Version", appOptions.Version);
 
+            
+            serilogOptions.NoTrackingUrls?.ToList().ForEach(p => loggerConfiguration.Filter
+                .ByExcluding(Matching.WithProperty<string>("RequestPath", n => n.EndsWith(p))));
+            
             if (serilogOptions.Seq.Enabled)
             {
                 loggerConfiguration.WriteTo.Seq(serilogOptions.Seq.Url, apiKey: serilogOptions.Seq.Apikey);

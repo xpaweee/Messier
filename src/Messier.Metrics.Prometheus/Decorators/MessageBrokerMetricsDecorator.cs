@@ -7,22 +7,22 @@ using Messier.Metrics.Prometheus.Attributes;
 namespace Messier.Metrics.Prometheus.Decorators;
 
 [Meter(MetricsKey)]
-public class MessageBrokerMetricsDecorator : IMessageClient
+public class MessageBrokerMetricsDecorator : IMessageBroker
 {
     private const string MetricsKey = "message_broker";
     
-    private readonly IMessageClient _messageClient;
+    private readonly IMessageBroker _messageBroker;
     private static readonly Meter Meter = new(MetricsKey);
     private static readonly Counter<long> PublishedMessagesCounter = Meter.CreateCounter<long>("published_messages");
-    public MessageBrokerMetricsDecorator(IMessageClient messageClient)
+    public MessageBrokerMetricsDecorator(IMessageBroker messageBroker)
     {
-        _messageClient = messageClient;
+        _messageBroker = messageBroker;
     }
 
     public async Task SendAsync<TMessage>(TMessage message, CancellationToken cancellationToken) where TMessage : IMessage
     {
         var messageName = message.GetType().Name.Underscore();
-        await _messageClient.SendAsync(message, cancellationToken);
+        await _messageBroker.SendAsync(message, cancellationToken);
         
         PublishedMessagesCounter.Add(1, new KeyValuePair<string, object?>("message", messageName));
     }

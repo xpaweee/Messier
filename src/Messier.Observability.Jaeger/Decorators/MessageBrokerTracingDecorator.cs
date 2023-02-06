@@ -6,17 +6,17 @@ using Messier.Messaging.Interfaces;
 
 namespace Messier.Observability.Jaeger.Decorators;
 
-public class MessageBrokerTracingDecorator : IMessageClient
+public class MessageBrokerTracingDecorator : IMessageBroker
 {
     public const string ActivitySourceName = "message_broker";
-    private readonly IMessageClient _messageClient;
+    private readonly IMessageBroker _messageBroker;
     private static readonly ActivitySource ActivitySource = new(ActivitySourceName);
 
     private readonly IContextProvider _contextProvider;
 
-    public MessageBrokerTracingDecorator(IMessageClient messageClient, IContextProvider contextProvider)
+    public MessageBrokerTracingDecorator(IMessageBroker messageBroker, IContextProvider contextProvider)
     {
-        _messageClient = messageClient;
+        _messageBroker = messageBroker;
         _contextProvider = contextProvider;
     }
 
@@ -27,6 +27,6 @@ public class MessageBrokerTracingDecorator : IMessageClient
         using var activity = ActivitySource.StartActivity("publisher", ActivityKind.Producer, context.ActivityId);
         activity?.SetTag("message", name);
         activity?.SetTag("correlation_id", context.CorrelationId);
-        await _messageClient.SendAsync(message, cancellationToken);
+        await _messageBroker.SendAsync(message, cancellationToken);
     }
 }

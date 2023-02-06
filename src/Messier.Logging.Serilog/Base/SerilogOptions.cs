@@ -5,6 +5,7 @@ public class SerilogOptions
     public SeqOptions Seq { get; set; }
     
     public ConsoleOptions Console { get; set; }
+    public IEnumerable<string>? NoTrackingUrls { get; set; }
 }
 
 public class ConsoleOptions
@@ -17,3 +18,4 @@ public class SeqOptions
     public string Url { get; set; }
     public string Apikey { get; set; }
 }
+
