@@ -14,11 +14,10 @@ public class OutboxCleaner : BackgroundService
     private readonly IOptions<OutboxOptions> _options;
     private int _isProcessing;
 
-    public OutboxCleaner(IServiceProvider serviceProvider, ILogger<OutboxCleaner> logger, int isProcessing, IOptions<OutboxOptions> options)
+    public OutboxCleaner(IServiceProvider serviceProvider, ILogger<OutboxCleaner> logger, IOptions<OutboxOptions> options)
     {
         _serviceProvider = serviceProvider;
         _logger = logger;
-        _isProcessing = isProcessing;
         _options = options;
     }
 

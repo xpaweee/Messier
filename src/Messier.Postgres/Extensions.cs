@@ -46,7 +46,7 @@ public static class Extensions
         
         serviceCollection.AddTransient<IMessageBroker, OutboxMessageBroker>();
         serviceCollection.AddHostedService<OutboxSender>();
-        // serviceCollection.AddHostedService<OutboxCleaner>();
+        serviceCollection.AddHostedService<OutboxCleaner>();
 
         return serviceCollection;
     }
