@@ -16,24 +16,9 @@ internal sealed class RabbitmqBroker : IMessageClient
         _logger = logger;
     }
     
-    // public async Task SendAsync<TMessage>(TMessage message, CancellationToken cancellationToken) where TMessage : IMessage
-    // {
-    //     try
-    //     {
-    //         _logger.LogInformation($"Sending a message: {message.GetType().Name}");
-    //         await _bus.PubSub.PublishAsync(message, cancellationToken);
-    //     }
-    //     catch (Exception e)
-    //     {
-    //         Console.WriteLine(e);
-    //         throw;
-    //     }
-    //
-    // }
-
     public async Task SendAsync<TType>(MessageWrapper<TType> message, CancellationToken cancellationToken = default) where TType : IMessage
     {
         _logger.LogInformation($"Sending a message: {message.GetType().Name}");
-        await _bus.PubSub.PublishAsync(message, cancellationToken);
+        await _bus.PubSub.PublishAsync(message.Message, cancellationToken);
     }
 }

@@ -46,10 +46,12 @@ public static class Extensions
                 .Enrich.WithProperty("Environment", context.HostingEnvironment)
                 .Enrich.WithProperty("Application", appOptions.Name)
                 .Enrich.WithProperty("Version", appOptions.Version);
-
             
             serilogOptions.NoTrackingUrls?.ToList().ForEach(p => loggerConfiguration.Filter
                 .ByExcluding(Matching.WithProperty<string>("RequestPath", n => n.EndsWith(p))));
+            
+            loggerConfiguration.MinimumLevel.Override("Microsoft.EntityFrameworkCore.Database.Command", LogEventLevel.Warning);
+            loggerConfiguration.MinimumLevel.Override("Microsoft.EntityFrameworkCore.Infrastructure", LogEventLevel.Warning);
             
             if (serilogOptions.Seq.Enabled)
             {
